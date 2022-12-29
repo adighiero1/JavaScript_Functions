@@ -69,8 +69,8 @@ quadrant(x, y);
 console.log("EXERCISE 4:\n==========\n");
 
 function triangle(a, b, c) {
-  if (a + b <= c) {
-    console.log("This is not a valid triangle!");
+  if (a + b <= c || a + c <= b || b + c <= a) {
+    console.log("not a valid triangle");
   } else if ((a === b || a === c || b === c) && a + b > c && a !== c) {
     console.log("This is an isoceles triangle");
   } else if (a === b && b === c) {
@@ -80,7 +80,7 @@ function triangle(a, b, c) {
   }
 }
 
-triangle(1, 4, 3);
+triangle(2, 1, 1);
 
 console.log("EXERCISE 5:\n==========\n");
 
