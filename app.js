@@ -70,13 +70,13 @@ console.log("EXERCISE 4:\n==========\n");
 
 function triangle(a, b, c) {
   if (a + b <= c || a + c <= b || b + c <= a) {
-    console.log("not a valid triangle");
-  } else if ((a === b || a === c || b === c) && a + b > c && a !== c) {
-    console.log("This is an isoceles triangle");
+    return "Not a valid triangle";
   } else if (a === b && b === c) {
-    console.log("This is an equilateral triangle");
+    return "Equilateral triangle";
+  } else if (a === b || a === c || b === c) {
+    return "Isosceles triangle";
   } else {
-    console.log("This is a scalene triangle");
+    return "Scalene triangle";
   }
 }
 
